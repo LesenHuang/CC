@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 
 	if (strchr(argv[1], '.') != NULL)
 
-		ch = toBits(&(float){atoi(argv[1])}, sizeof(float));
+		ch = toBits(&(float){atof(argv[1])}, sizeof(float));
 
 	else if(strlen(argv[1]) == 1)
 
